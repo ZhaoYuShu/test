@@ -1,0 +1,126 @@
+
+a{
+    text-decoration: none;
+}
+#page1{
+    position: relative;
+}
+.header{
+    width:320px;
+    height:40px;
+    background: rgba(255,0,0,0);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 999;
+}
+/*tab选项卡设置*/
+.tab-item .icon{
+    height:auto;
+    margin:4px auto 0;
+    font-size:24px;
+}
+
+
+/*tab选项卡选中状态*/
+.tab-item-active{
+    color:red;
+}
+
+/*首页搜索框设置*/
+.border{
+    border-radius: 20px;
+    width:180px;
+    margin:4px 10px;
+    height:32px;
+    float:left;
+}
+
+/*搜索框小图标*/
+.ion-ios-search-strong{
+    font-size:24px;
+}
+
+/*首页logo*/
+.logo{
+    display: inline-block;
+    background: url("../img/jd-sprites.png") no-repeat 0 -109px;
+    width:56px;
+    height:21px;
+    background-size: 200px 200px;
+    margin-top:10px;
+    margin-left:10px;
+    float:left;
+}
+
+/*登录*/
+.login{
+    display: inline-block;
+    color:#fff;
+    margin:10px;
+}
+
+/*搜索页搜索框小图标*/
+.ion-ios-search{
+    display: inline-block;
+    height:34px;
+    width:40px;
+    border-left:1px solid #ccc;
+    text-align: center;
+    line-height:34px;
+}
+.border2{
+    border-radius:5px;
+    margin-left:16px;
+    width:260px;
+}
+
+
+
+/*热门搜索*/
+.hotSearch h4{
+    width:200px;
+    float:left;
+}
+.hotSearch .ion-loop.button.icon{
+    width:20px;
+    height:20px;
+    float:right;
+    background: none;
+    outline : none;
+    border:none;
+}
+.hotSearch .buttons{
+    clear: both;
+}
+.hotSearch .buttons button.button{
+    height:25px;
+    width:90px;
+    border:1px solid #ccc;
+    margin-bottom:5px;
+    font-size:12px;
+    min-height: 25px;
+    line-height:24px;
+    margin-right:7px;
+    background-color: #fff;
+    border-radius:20px;
+}
+.f-hide{
+    display:none;
+}
+#page1{
+    min-height: 477px;
+}
+#page2{
+    min-height: 477px;
+}
+
+
+/*轮播图*/
+ion-slide img{
+    width:320px;
+    height:143px;
+}
+.slider-pager .slider-pager-page{
+    color:#fff;
+}
