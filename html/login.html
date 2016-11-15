@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link href="../lib/css/ionic.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/login.css" rel="stylesheet" type="text/css"/>
+    <script src="../lib/js/ionic.bundle.min.js"></script>
+    <script src="../lib/js/jquery-1.10.2.min.js"></script>
+    <script src="../lib/js/jquery.idcode.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body ng-app="loginApp" ng-controller="loginCtrl">
+
+    <ion-header-bar class="bar-stable">
+        <a class="button icon ion-ios-arrow-left button-clear"></a>
+        <h2 class="title">京东登录</h2>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="padding container">
+            <label class="item item-input label1">
+                <input type="text" placeholder="用户名/邮箱/已验证手机" ng-focus="isFocus1=false" ng-blur="isFocus1=true" ng-model="username" class="username"/>
+                <i class="icon ion-ios-close placeholder-icon close1 {{isFocus1==true?'f-hide':''}}" ng-click="clear()"></i>
+            </label>
+            <label class="item item-input label2">
+                <input type="text" placeholder="请输入密码" ng-focus="isFocus2=false" ng-blur="isFocus2=true" ng-model="password" class="password"/>
+                <i class="icon ion-ios-close placeholder-icon close2 {{isFocus2==true?'f-hide':''}}"></i>
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox">
+                    <div class="track">
+                        abc
+                        <div class="handle"></div>
+                        &nbsp;
+                        ...
+                    </div>
+
+                </label>
+            </label>
+            <label class="item item-input label3">
+                <input type="text" placeholder="请输入验证码" ng-focus="isFocus3=false" ng-blur="isFocus3=true" ng-model="idcode" class="idcode"/>
+                <i class="icon ion-ios-close placeholder-icon close3 {{isFocus3==true?'f-hide':''}}"></i>
+            </label>
+
+
+            <span id="idcode" class="label4"></span>
+
+            <label class="label5">
+                <button class="button button-block">登录</button>
+            </label>
+
+            <label class="label6">
+                <ion-checkbox class="checkbox-assertive">一个月内免登录</ion-checkbox>
+            </label>
+
+            <label class="label7 ">
+                <button class="button icon ion-ios-locked-outline icon-left">找回密码</button>
+                <button class="button icon ion-iphone icon-left">快速注册</button>
+            </label>
+
+            <label class="label8 item">
+                <div class="others">
+                    <h4>其他登录方式</h4>
+                    <div class="">
+                        <div class="qq"><i class="icon ion-social-tux"></i>QQ</div>
+                        <div class="weixin"><i class="icon ion-social-twitter-outline"></i>微信</div>
+                    </div>
+                </div>
+            </label>
+
+        </div>
+    </ion-content>
+
+
+</body>
+</html>

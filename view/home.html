@@ -1,0 +1,65 @@
+<ion-view>
+    <div class="firstPanel" id="page1">
+        <header class="header">
+            <a ui-sref="main.home" class="logo"></a>
+            <label class="item item-input border">
+                <i class="icon ion-ios-search-strong placeholder-icon"></i>
+                <input type="text" placeholder="搜索京东商品/店铺" class="searchInput" ng-focus="goPage1();" ng-init="c=0"/>
+            </label>
+
+            <a class="login" href="../jingdong/html/login.html">登录</a>
+        </header>
+        <div class="content">
+            <ion-slide-box does-continue="true" auto-play="true" slide-interval="3000">
+                <ion-slide>
+                    <img src="img/1.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/2.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/3.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/4.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/5.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/6.jpg"/>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/7.jpg"/>
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+    </div>
+
+    <div class="secondPanel f-hide" id="page2">
+        <ion-header-bar class="bar-stable">
+            <button class="button icon ion-android-close button-clear" ng-click="goPage2();"></button>
+            <label class="item item-input border2">
+                <input type="text" placeholder="搜索京东商品/店铺"/>
+                <i class="icon ion-ios-search stable-bg"></i>
+            </label>
+        </ion-header-bar>
+        <ion-content class="stable-bg">
+            <div class="hotSearch light-bg padding-left padding-right">
+                <h4>热门搜索</h4>
+                <button class="button icon ion-loop "></button>
+                <div class="buttons">
+                    <button class="button">数码相机</button>
+                    <button class="button">平板</button>
+                    <button class="button">鞋子</button>
+                    <button class="button">安全座椅</button>
+                    <button class="button">羽绒服</button>
+                    <button class="button">面膜</button>
+                </div>
+            </div>
+
+        </ion-content>
+    </div>
+
+
+</ion-view>
